@@ -1,0 +1,17 @@
+--创建用户
+CREATE USER He IDENTIFIED BY 123456;
+
+--删除用户
+DROP USER He;
+
+--查找用户
+SELECT * FROM ALL_USERS;
+
+--修改用户名密码
+ALTER USER He IDENTIFIED BY 123456789;
+
+--给用户设置权限
+GRANT CONNECT TO He;
+ 
+--撤销用户权限
+REVOKE CONNECT FROM He;
